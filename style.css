@@ -143,39 +143,40 @@ main .main-buttons div button {
 main .main-buttons div button:hover {
     border: 1px solid #dfe1e5;
     color: black;
+    margin: 10px 9px;
 }
+
 
 footer {
+    height: 80px;
     width: 100%;
-    height: 50px;
-
+    background-color: #dfe1e5;
     position: absolute;
-    align-items: center;
     bottom: 0;
-    background-color: #f2f2f2;
-    border-top: 1px solid #dfe1e5;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
 }
 
-footer ul {
+footer div {
+    width: 100%;
     display: flex;
-    margin: 10px;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footer-list {
+    width: 530px;
     display: flex;
-    padding-left: 0;
+    justify-content: center;
+    -webkit-padding-start: 0;
+    margin-inline-start: 0;
+    margin-block-end: 0;
 }
 
-footer ul li {
-    margin: 10px;
+footer .footer-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-footer .footer-esquerda {
-    justify-self: left;
-}
-
-footer .footer-direita {
-    justify-self: right;
+footer .footer-list li a {
+    padding: 0 50px;
 }
